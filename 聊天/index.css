@@ -1,0 +1,41 @@
+
+.phone{
+    width: 400px;height: 600px;border: 1px solid black;position: relative;
+}
+.bottom{
+    display:flex;flex-direction:row;height: 50px;text-align: center;position: absolute;bottom: 0;left: 0;margin-bottom:10px; ;
+}
+.bottom .img{
+    width: 50px;overflow: hidden;padding: 10px;height: 30px;
+}
+.bottom .input{
+    width: 250px;margin-top:20px ;height: 20px;
+}
+.bottom .input input{
+    width: 100%;height: 100%;
+}
+.bottom .button{
+    width: 50px;margin-top:20px ;height: 20px;background: none;
+    border: 1px solid #ddd;margin-left: 10px;line-height: 20px;
+}
+.bottom .button button{
+    border: none;background: none;height: 100%;
+}
+.message{
+   width:300px;display: flex;flex-direction: row;height: 40px;margin-top: 10px;
+}
+.message div{
+    width:100%;height:100%;border-radius: 6px;background: green;position: relative;
+}
+.message img{display:inline-block;margin-right: 10px;}
+.message div:before{
+    content: "";position: absolute;
+    top:10px;left: -10px;
+    width: 0px;
+    height: 0px;
+    border-width: 10px;overflow: hidden;
+    border-style:  dashed dashed solid dashed ;
+    border-color:  transparent transparent green transparent ;
+
+
+}
