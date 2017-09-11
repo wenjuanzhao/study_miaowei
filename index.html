@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .big{
+            width: 800px;height: 600px;margin: 50px auto;
+        }
+        .header{
+            width: 100%;height: 50px;background: #000066;text-align: center;position: relative;
+        }
+        .options{
+            position: absolute;border: 1px solid black;background: white;
+            width: 200px;height: 400px;left: 800px;top:0;display: none;
+        }
+        .options_item .height span,.options_item .width span,.options_item .colors span{
+            margin-left: 10px;display: inline-block;width: 40px;border: 1px solid black;height: 40px;text-align: center;line-height: 40px;
+        }
+        .choose{
+            margin-top: 20px;
+        }
+        .choose span{
+            margin-left: 10px;display: inline-block;width: 60px;border: 1px solid black;height: 40px;text-align: center;line-height: 40px;background: #222;color: white;
+        }
+        .options_item span{
+            cursor: pointer;
+        }
+        .options_item .colors span:nth-child(1){
+            background: red;
+        }
+        .options_item .colors span:nth-child(2){
+            background: yellow;
+        }
+        .options_item .colors span:nth-child(3){
+            background: blue;
+        }
+        .content{
+            background: white;position: relative;height:550px ;border: 1px solid red;
+        }
+        .shu{
+            background: #b94a48;color: white;width: 50px;height: 50px;
+            position: absolute;top:0;left: 0;bottom: 0;right: 0;margin: auto;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="big">
+    <div class="header">
+        <h1>点击设置样式</h1>
+        <div class="options">
+            <div class="options_item">
+                <h3>选择背景</h3>
+                <div class="colors">
+                    <span data="red">红</span>
+                    <span data="yellow">黄</span>
+                    <span data="blue">蓝</span>
+                </div>
+            </div>
+            <div class="options_item">
+                <h3>选择宽度</h3>
+                <div class="width">
+                    <span data="100">100</span>
+                    <span data="200">200</span>
+                    <span data="300">300</span>
+                </div>
+            </div>
+            <div class="options_item">
+                <h3>选择高度</h3>
+                <div class="height">
+                    <span data="100">100</span>
+                    <span data="200">200</span>
+                    <span data="300">300</span>
+                </div>
+            </div>
+            <div class="options_item choose">
+                 <span>恢复</span>
+                 <span>确定</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="shu">大柏树</div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
