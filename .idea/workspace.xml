@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7e97f5-5157-45b0-859a-63499bc8cafb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/图片上传的时候预览的功能/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/拖进物品进购物车/img/111.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/拖进物品进购物车/img/222.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/拖进物品进购物车/img/333.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/拖进物品进购物车/img/444.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/拖进物品进购物车/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,14 +22,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/图片上传的时候预览的功能/index.html">
+        <entry file="file://$PROJECT_DIR$/拖进物品进购物车/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="260">
+              <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
               <folding>
-                <element signature="e#606#644#0" expanded="false" />
-                <element signature="e#678#780#0" expanded="false" />
-                <element signature="e#814#880#0" expanded="false" />
+                <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2383#3006#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,6 +54,7 @@
         <option value="$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/图片上传的时候预览的功能/index.html" />
+        <option value="$PROJECT_DIR$/拖进物品进购物车/index.html" />
       </list>
     </option>
   </component>
@@ -92,17 +95,12 @@
             <path>
               <item name="study_miaowei" type="b2602c69:ProjectViewProjectNode" />
               <item name="study_miaowei" type="462c0819:PsiDirectoryNode" />
-              <item name="图片上传的时候预览的功能" type="462c0819:PsiDirectoryNode" />
+              <item name="拖进物品进购物车" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study_miaowei" type="b2602c69:ProjectViewProjectNode" />
               <item name="study_miaowei" type="462c0819:PsiDirectoryNode" />
-              <item name="轮播_左右点击小图标" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study_miaowei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study_miaowei" type="462c0819:PsiDirectoryNode" />
-              <item name="轮播_左右点击小图标" type="462c0819:PsiDirectoryNode" />
+              <item name="拖进物品进购物车" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -119,6 +117,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\study_miaowei\拖进物品进购物车\img" />
       <recent name="G:\study_miaowei\轮播_左右点击小图标\img" />
       <recent name="G:\study_miaowei\轮播_左右点击小图标" />
       <recent name="G:\study_miaowei\聊天\img" />
@@ -153,18 +152,18 @@
       <workItem from="1505194378665" duration="5787000" />
       <workItem from="1505213937361" duration="4093000" />
       <workItem from="1505265351888" duration="8672000" />
-      <workItem from="1505282521644" duration="816000" />
+      <workItem from="1505282521644" duration="5248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40310000" />
+    <option name="totallyTimeSpent" value="44742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1578125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.090625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -370,12 +369,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/图片上传的时候预览的功能/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding>
             <element signature="e#606#644#0" expanded="false" />
             <element signature="e#678#780#0" expanded="false" />
             <element signature="e#814#880#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/拖进物品进购物车/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2383#3006#0" expanded="false" />
           </folding>
         </state>
       </provider>
