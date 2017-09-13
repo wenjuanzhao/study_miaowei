@@ -56,59 +56,43 @@
 </form>
 <div id="test2" class="box1 box2 box3">sasa</div>
 <div id="miaowei" data-maiaov="妙味" data-maiaov-all="妙味课堂"></div>
-<ul>
-    <li draggable="true">1</li>
-    <li draggable="true">2</li>
-    <li draggable="true">3</li>
-</ul>
+
 <div id="div1"></div>
 </body>
 
 <script defer="defer" src="a.js"></script>
 
 <script>
-    var ul=document.getElementsByTagName("ul")[0];
-   var lis=ul.getElementsByTagName("li");
+
    var i=0;
     var div1=document.getElementById("div1");
-   for(var i=0;i<lis.length;i++){
-       lis[i].index=i;
-       lis[i].ondragstart=function (ev) {
-           //针对火狐浏览器实现拖放  并且使用dataTransfer传递拖放过程中的样式
-           var ev=ev||window.event;
-           ev.dataTransfer.setData("name",this.index)
-           //改变被拖拽元素被拖到拖拽区域的样式
-           ev.dataTransfer.effectAllowed='copy'  //进入拖拽区有一个小+
-           ev.dataTransfer.effectAllowed='link'  //进入拖拽区有一个小箭头
-           //设置拖拽的样式   一个DOM元素(包括display:none的元素)也可以是img,坐标
-           ev.dataTransfer.setDragImage(div1,0,0)   //拖拽出来的时候影子就会变为div1的样式
-           this.style.background="red"
-       }
-       lis[i].ondrag=function () {
-           //即使鼠标停下来也会触发
-           //console.log(i++)
-       }
-       lis[i].ondragend=function () {
-           this.style.background="green"
-       }
-   }
-
     div1.ondragenter=function () {
-        console.log(11)
+        div1.innerHTML="可以释放了"
     }
     div1.ondragover=function (e) {
         //只有在这阻止了默认事件才会在目标区域释放的时候  才会触发
         e.preventDefault();
-        console.log(i++)
+        //console.log(i++)
     }
     div1.ondragleave=function () {
         console.log(22)
+        div1.innerHTML="将文件拖拽到此区域"
     }
     div1.ondrop=function (ev) {
-        var ss=ul.removeChild(lis[ev.dataTransfer.getData("name")])
-        div1.appendChild(ss);
-        for(var i=0;i<lis.length;i++){
-            lis[i].index=i;
+        ev.preventDefault();
+        //得到拖拽进目标区域的文件
+        var fs=ev.dataTransfer.files;
+        //拖拽进来的列表
+        console.log(fs.length)
+        //得到每个文件的类型
+        console.log(fs[0].type)
+
+        var fd=new FileReader();
+        fd.readAsDataURL(fs[0]);
+        fd.onload=function () {
+            //在这里可以操作文件
+            //result就是读取到的文件内容
+            console.log(this.result)
         }
     }
 </script>
