@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    ul li{
+        list-style: none;width: 40px;height: 20px;background: green;margin: 10px;
+    }
+    #div1{
+        width: 200px;height: 200px;background: yellow;
+    }
+</style>
+<body>
+<script>
+    document.createElement("header")
+    document.createElement("nav")
+    document.createElement("section")
+    document.createElement("footer")
+</script>
+   <button onclick="tt(this)">sajsa</button>
+<time datetime="2008-02-14">情人节</time>
+   <input type="text" list="list1" >
+<datalist id="list1">
+    <option value="js">sasa1</option>
+    <option value="css">sasa2</option>
+    <option value="html">sasa3</option>
+</datalist>
+<details>
+    <summary>sasa</summary>
+    <p>sassasas</p>
+</details>
+<dialog open>
+    <dt>老叟</dt>
+    <dd>老叟</dd>
+    <dt>老叟</dt>
+    <dd>老叟</dd>
+    <dt>老叟</dt>
+    <dd>老叟</dd>
+</dialog>
+<progress value="50" max="100"></progress>
+<input type="datetime-local">
+<input type="week">
+<form action="http://www.baidu.com">
+    <input type="text" >
+    <input type="submit" >
+    <input type="submit"  formaction="http://qq.com" value="sasa">
+</form>
+<form>
+    <input type="text" required id="text"/>
+    <input type="submit"/>
+</form>
+<div id="test2" class="box1 box2 box3">sasa</div>
+<div id="miaowei" data-maiaov="妙味" data-maiaov-all="妙味课堂"></div>
+<ul>
+    <li draggable="true">1</li>
+    <li draggable="true">2</li>
+    <li draggable="true">3</li>
+</ul>
+<div id="div1"></div>
+</body>
+
+<script defer="defer" src="a.js"></script>
+
+<script>
+    var ul=document.getElementsByTagName("ul")[0];
+   var lis=ul.getElementsByTagName("li");
+   var i=0;
+    var div1=document.getElementById("div1");
+   for(var i=0;i<lis.length;i++){
+       lis[i].index=i;
+       lis[i].ondragstart=function (ev) {
+           //针对火狐浏览器实现拖放  并且使用dataTransfer传递拖放过程中的样式
+           var ev=ev||window.event;
+           ev.dataTransfer.setData("name",this.index)
+           //改变被拖拽元素被拖到拖拽区域的样式
+           ev.dataTransfer.effectAllowed='copy'  //进入拖拽区有一个小+
+           ev.dataTransfer.effectAllowed='link'  //进入拖拽区有一个小箭头
+           //设置拖拽的样式   一个DOM元素(包括display:none的元素)也可以是img,坐标
+           ev.dataTransfer.setDragImage(div1,0,0)   //拖拽出来的时候影子就会变为div1的样式
+           this.style.background="red"
+       }
+       lis[i].ondrag=function () {
+           //即使鼠标停下来也会触发
+           //console.log(i++)
+       }
+       lis[i].ondragend=function () {
+           this.style.background="green"
+       }
+   }
+
+    div1.ondragenter=function () {
+        console.log(11)
+    }
+    div1.ondragover=function (e) {
+        //只有在这阻止了默认事件才会在目标区域释放的时候  才会触发
+        e.preventDefault();
+        console.log(i++)
+    }
+    div1.ondragleave=function () {
+        console.log(22)
+    }
+    div1.ondrop=function (ev) {
+        var ss=ul.removeChild(lis[ev.dataTransfer.getData("name")])
+        div1.appendChild(ss);
+        for(var i=0;i<lis.length;i++){
+            lis[i].index=i;
+        }
+    }
+</script>
+</html>
