@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+        #c1{
+            background: white;
+        }
+    </style>
+</head>
+<body>
+<canvas id="c1" width="400" height="400">
+    <span style="color: white">不支持canvas</span>
+</canvas>
+</body>
+<script>
+    var oC=document.getElementById("c1");
+    var content=oC.getContext("2d");
+    oC.onmousedown=function (e) {
+        var ev=e||window.event;
+        content.moveTo(ev.clientX-oC.offsetLeft,ev.clientY-oC.offsetTop);
+        document.onmousemove=function (e) {
+            var ev=e||window.event;
+            content.lineTo(ev.clientX-oC.offsetLeft,ev.clientY-oC.offsetTop);
+            content.stroke();
+        }
+        document.onmouseup=function () {
+            document.onmousemove=null;
+            document.onmouseup=null;
+        }
+    }
+</script>
+</html>

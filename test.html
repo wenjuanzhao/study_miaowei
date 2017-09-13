@@ -8,92 +8,42 @@
     <title>Document</title>
 </head>
 <style>
-    ul li{
-        list-style: none;width: 40px;height: 20px;background: green;margin: 10px;
+    body{
+        background: black;
     }
-    #div1{
-        width: 200px;height: 200px;background: yellow;
+    #c1{
+         background: white;
     }
 </style>
 <body>
-<script>
-    document.createElement("header")
-    document.createElement("nav")
-    document.createElement("section")
-    document.createElement("footer")
-</script>
-   <button onclick="tt(this)">sajsa</button>
-<time datetime="2008-02-14">情人节</time>
-   <input type="text" list="list1" >
-<datalist id="list1">
-    <option value="js">sasa1</option>
-    <option value="css">sasa2</option>
-    <option value="html">sasa3</option>
-</datalist>
-<details>
-    <summary>sasa</summary>
-    <p>sassasas</p>
-</details>
-<dialog open>
-    <dt>老叟</dt>
-    <dd>老叟</dd>
-    <dt>老叟</dt>
-    <dd>老叟</dd>
-    <dt>老叟</dt>
-    <dd>老叟</dd>
-</dialog>
-<progress value="50" max="100"></progress>
-<input type="datetime-local">
-<input type="week">
-<form action="http://www.baidu.com">
-    <input type="text" >
-    <input type="submit" >
-    <input type="submit"  formaction="http://qq.com" value="sasa">
-</form>
-<form>
-    <input type="text" required id="text"/>
-    <input type="submit"/>
-</form>
-<div id="test2" class="box1 box2 box3">sasa</div>
-<div id="miaowei" data-maiaov="妙味" data-maiaov-all="妙味课堂"></div>
 
-<div id="div1"></div>
+<canvas id="c1" width="400" height="400">
+   <span style="color: white">不支持canvas</span>
+</canvas>
 </body>
 
-<script defer="defer" src="a.js"></script>
-
 <script>
-
-   var i=0;
-    var div1=document.getElementById("div1");
-    div1.ondragenter=function () {
-        div1.innerHTML="可以释放了"
-    }
-    div1.ondragover=function (e) {
-        //只有在这阻止了默认事件才会在目标区域释放的时候  才会触发
-        e.preventDefault();
-        //console.log(i++)
-    }
-    div1.ondragleave=function () {
-        console.log(22)
-        div1.innerHTML="将文件拖拽到此区域"
-    }
-    div1.ondrop=function (ev) {
-        ev.preventDefault();
-        //得到拖拽进目标区域的文件
-        var fs=ev.dataTransfer.files;
-        //拖拽进来的列表
-        console.log(fs.length)
-        //得到每个文件的类型
-        console.log(fs[0].type)
-
-        var fd=new FileReader();
-        fd.readAsDataURL(fs[0]);
-        fd.onload=function () {
-            //在这里可以操作文件
-            //result就是读取到的文件内容
-            console.log(this.result)
-        }
-    }
+   window.onload=function () {
+       var oc=document.getElementById("c1");
+       //得到绘制环境
+       var oGC=oc.getContext("2d");
+       //先将画笔保存起来
+       oGC.save();
+       oGC.fillStyle="red"
+       oGC.beginPath();
+       oGC.moveTo(50,50);
+       oGC.lineTo(100,50);
+       oGC.lineTo(100,100);
+       oGC.closePath()
+       oGC.fill();
+       //再恢复画笔
+       oGC.restore();
+       oGC.beginPath();
+       oGC.moveTo(100,100);
+       oGC.lineTo(200,200);
+       oGC.lineTo(200,300);
+       oGC.closePath();
+       oGC.fill();
+   }
 </script>
 </html>
