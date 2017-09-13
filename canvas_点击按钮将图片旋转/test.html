@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: black;
+    }
+    #c1{
+         background: white;
+    }
+</style>
+<body>
+
+<div>
+    <input type="button" value="向左旋转">
+    <input type="button" value="向右旋转">
+</div>
+<div>
+    <img src="111.jpg">
+</div>
+</body>
+
+<script>
+   window.onload=function () {
+      var input=document.getElementsByTagName("input");
+      var img=document.getElementsByTagName("img")[0];
+      var yImg=new Image();
+      yImg.src=img.src;
+      yImg.onload=function () {
+          draw(img)
+      }
+      var iNow=0;
+      function draw(img) {
+          var c1=document.createElement("canvas");
+          var context=c1.getContext("2d");
+          c1.width=img.width;
+          c1.height=img.height;
+          img.parentNode.replaceChild(c1,img)
+          context.drawImage(img,0,0)
+
+          input[0].onclick=function () {
+              if(iNow===3){
+                  iNow=0
+              }else{
+                  iNow++;
+              }
+              toChange();
+          }
+          input[1].onclick=function () {
+              if(iNow==0){
+                  iNow=3
+              }
+              else{
+                  iNow--;
+              }
+              toChange();
+          }
+          function toChange() {
+              switch (iNow){
+                  case 1:
+                      c1.width=img.height;
+                      c1.height=img.width;
+                      context.rotate(90*Math.PI/180);
+                      context.drawImage(img,0,-img.height)
+                      break;
+                  case 2:
+                      c1.width=img.width;
+                      c1.height=img.height;
+                      context.clearRect(0,0,c1.width,c1.height)
+                      context.rotate(180*Math.PI/180);
+                      context.drawImage(img,-img.width,-img.height)
+                      break;
+                  case 3:
+                      c1.width=img.height;
+                      c1.height=img.width;
+                      context.clearRect(0,0,c1.width,c1.height)
+                      context.rotate(270*Math.PI/180);
+                      context.drawImage(img,-img.width,0)
+                      break;
+                  case 0:
+                      c1.width=img.width;
+                      c1.height=img.height;
+                      context.clearRect(0,0,c1.width,c1.height)
+                      context.rotate(360*Math.PI/180);
+                      context.drawImage(img,0,0)
+                      break;
+
+              }
+          }
+      }
+
+
+   }
+</script>
+</html>
