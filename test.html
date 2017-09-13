@@ -25,25 +25,59 @@
 <script>
    window.onload=function () {
        var oc=document.getElementById("c1");
+
        //得到绘制环境
        var oGC=oc.getContext("2d");
-       //先将画笔保存起来
-       oGC.save();
-       oGC.fillStyle="red"
-       oGC.beginPath();
-       oGC.moveTo(50,50);
-       oGC.lineTo(100,50);
-       oGC.lineTo(100,100);
-       oGC.closePath()
-       oGC.fill();
-       //再恢复画笔
-       oGC.restore();
-       oGC.beginPath();
-       oGC.moveTo(100,100);
-       oGC.lineTo(200,200);
-       oGC.lineTo(200,300);
-       oGC.closePath();
-       oGC.fill();
+       function set(){
+           var date=new Date();
+           var hour=date.getHours();
+           var minutes=date.getMinutes();
+           var second=date.getSeconds();
+           oGC.clearRect(0,0,oc.width,oc.height);
+           var oHours_value=(-90+hour*30+minutes/2)*Math.PI/180;
+           var oMin_value=(-90+minutes*6)*Math.PI/180;
+           var oSec_value=(-90+second*6)*Math.PI/180;
+           for(var i=0;i<60;i++){
+               oGC.moveTo(200,200)
+               oGC.arc(200,200,150,6*i*Math.PI/180,6*(i+1)*Math.PI/180,true)  //x圆心,y圆心,半径,起始弧度,结束弧度,旋转方向
+               oGC.stroke();
+           }
+           oGC.beginPath();
+           oGC.fillStyle="white"
+           oGC.arc(200,200,140,0,360*Math.PI,true)  //x圆心,y圆心,半径,起始弧度,结束弧度,旋转方向
+           oGC.closePath()
+           oGC.fill();
+           oGC.lineWidth=3;
+           for(var i=0;i<12;i++){
+               oGC.moveTo(200,200)
+               oGC.arc(200,200,140,30*i*Math.PI/180,30*(i+1)*Math.PI/180,true)  //x圆心,y圆心,半径,起始弧度,结束弧度,旋转方向
+               oGC.stroke();
+           }
+           oGC.beginPath();
+           oGC.arc(200,200,130,0,360*Math.PI,true)  //x圆心,y圆心,半径,起始弧度,结束弧度,旋转方向
+           oGC.closePath()
+           oGC.fill();
+           oGC.lineWidth=5;
+           oGC.beginPath()
+           oGC.moveTo(200,200);
+           oGC.arc(200,200,80,oHours_value,oHours_value,false);
+           oGC.closePath();
+           oGC.stroke()
+           oGC.lineWidth=3;
+           oGC.beginPath()
+           oGC.moveTo(200,200);
+           oGC.arc(200,200,118,oMin_value,oMin_value,false);
+           oGC.closePath();
+           oGC.stroke()
+           oGC.lineWidth=1;
+           oGC.beginPath()
+           oGC.moveTo(200,200);
+           oGC.arc(200,200,125,oSec_value,oSec_value,false);
+           oGC.closePath();
+           oGC.stroke()
+
+       }
+       setInterval(set,1000)
    }
 </script>
 </html>
