@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: black;
+    }
+    #c1{
+        background: white;
+    }
+</style>
+<body>
+
+<canvas id="c1" width="400" height="400">
+    <span style="color: white">不支持canvas</span>
+</canvas>
+</body>
+
+<script>
+    window.onload=function () {
+        var oc=document.getElementById("c1");
+        //得到绘制环境  画笔
+        var oGC=oc.getContext("2d");
+        oGC.font='60px impact' //文字的大小  文字的样式
+        oGC.textBaseline='top';
+        var str="sasa"
+        var width=oGC.measureText("sasa").width;
+        var left=(oc.width-width)/2;
+        var right=(oc.height-60)/2;
+        oGC.fillText(str,left,right)
+        console.log(oGC.font)
+    }
+</script>
+</html>
