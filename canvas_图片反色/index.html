@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: black;
+    }
+    #c1{
+        background: white;
+    }
+</style>
+<body>
+
+<canvas id="c1" width="400" height="400">
+    <span style="color: white">不支持canvas</span>
+</canvas>
+</body>
+
+<script>
+    window.onload=function () {
+        var oc=document.getElementById("c1");
+        var context=oc.getContext("2d");
+        var img=new Image();
+        img.src="11.jpg";
+        img.onload=function () {
+            draw(this)
+        }
+        function draw(obj) {
+            context.drawImage(obj,0,0);
+            var oImg=context.getImageData(0,0,obj.width,obj.height)
+            console.log(oImg)
+            for(var i=0;i<oImg.height;i++)
+                for(var j=0;j<oImg.width;j++){
+                   var res=[];
+                   var color=getXY(oImg,j,i)
+                    res[0]=255-color[0];
+                    res[1]=255-color[1];
+                    res[2]=255-color[2];
+                    res[3]=255;
+                   setXY(oImg,j,i,res)
+                }
+                console.log(11)
+            context.putImageData(oImg,0,obj.height)
+        }
+
+    }
+    //设置像素点
+    function setXY(obj,x,y,color) {
+        var w=obj.width;
+        var h=obj.height;
+        var d=obj.data;
+        for(var i=0;i<d.length;i++)
+        {
+            d[4*(y*w+x)]=color[0]
+            d[4*(y*w+x)+1]=color[1]
+            d[4*(y*w+x)+2]=color[2]
+            d[4*(y*w+x)+3]=color[3]
+        }
+
+    }
+    //传递imgData  x  y
+    function getXY(img,x,y) {
+        var color=[];
+        var w=img.width;
+        var h=img.height;
+        var d=img.data;
+        for(var i=0;i<d.length;i++)
+        {
+            color[0]=d[4*(y*w+x)]
+            color[1]=d[4*(y*w+x)+1]
+            color[2]=d[4*(y*w+x)+2]
+            color[3]=d[4*(y*w+x)+3]
+        }
+        return color
+    }
+</script>
+</html>

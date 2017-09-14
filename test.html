@@ -26,8 +26,44 @@
    window.onload=function () {
        var oc=document.getElementById("c1");
        //得到绘制环境  画笔
-       var oGC=oc.getContext("2d");
+       var context=oc.getContext("2d");
+       context.fillRect(0,0,100,100);
+       var img=context.getImageData(0,0,100,100);
+
+       for(var i=0;i<img.width;i++){
+           setXY(img,i,3,[255,0,0,255])
+       }
+        context.putImageData(img,100,100)
+   }
+   //设置像素点
+   function setXY(obj,x,y,color) {
+       var w=obj.width;
+       var h=obj.height;
+       var d=obj.data;
+       for(var i=0;i<d.length;i++)
+       {
+           d[4*(y*w+x)]=color[0]
+           d[4*(y*w+x)+1]=color[1]
+           d[4*(y*w+x)+2]=color[2]
+           d[4*(y*w+x)+3]=color[3]
+       }
 
    }
+   //传递imgData  x  y
+    function getXY(img,x,y) {
+         var color=[];
+         var w=img.width;
+         var h=img.height;
+         var d=img.data;
+         for(var i=0;i<d.length;i++)
+         {
+             color[0]=d[4*(y*w+x)]
+             color[1]=d[4*(y*w+x)+1]
+             color[2]=d[4*(y*w+x)+2]
+             color[3]=d[4*(y*w+x)+3]
+         }
+         return color
+    }
+
 </script>
 </html>
