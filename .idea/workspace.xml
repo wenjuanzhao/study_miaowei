@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7e97f5-5157-45b0-859a-63499bc8cafb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas_图片反色/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/canvas_图片反色/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker_canvas_图片反色/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax_无刷新上传/Index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/b.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html5_音乐导航/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html5实现离线存储应用/demo.manifest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html5实现离线存储应用/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/small.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket_study/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker_canvas_图片反色/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/canvas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/randArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker_js多线程/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/worker_js多线程/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.js" afterPath="$PROJECT_DIR$/a.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,78 +34,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canvas_鼠标画线/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1352">
-              <caret line="26" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canvas_点击按钮将图片旋转/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3380">
-              <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="65" selection-end-column="5" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#932#1202#0" expanded="false" />
-                <element signature="e#1252#1587#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/canvas_图片反色/index.html">
+        <entry file="file://$PROJECT_DIR$/html5_音乐导航/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#560#1415#0" expanded="false" />
-                <element signature="e#1462#1743#0" expanded="false" />
-                <element signature="e#1794#2117#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canvas_点击旁边的字会在画布上像素写字/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/canvas_文字在画布上居中显示/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1716">
-              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="382">
+              <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +58,6 @@
         <option value="$PROJECT_DIR$/轮播_左右点击小图标/index.html" />
         <option value="$PROJECT_DIR$/轮播_左右点击小图标/index.css" />
         <option value="$PROJECT_DIR$/轮播_左右点击小图标/index.js" />
-        <option value="$PROJECT_DIR$/a.js" />
         <option value="$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.css" />
         <option value="$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.html" />
         <option value="$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.js" />
@@ -123,8 +71,22 @@
         <option value="$PROJECT_DIR$/canvas_鼠标写字/index.html" />
         <option value="$PROJECT_DIR$/canvas_点击旁边的字会显示到画布上/index.html" />
         <option value="$PROJECT_DIR$/canvas_点击旁边的字会在画布上像素写字/index.html" />
-        <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/canvas_图片反色/index.html" />
+        <option value="$PROJECT_DIR$/b.js" />
+        <option value="$PROJECT_DIR$/a.js" />
+        <option value="$PROJECT_DIR$/ajax_无刷新上传/Index.html" />
+        <option value="$PROJECT_DIR$/socket_study/index.html" />
+        <option value="$PROJECT_DIR$/html5实现离线存储应用/demo.manifest" />
+        <option value="$PROJECT_DIR$/html5实现离线存储应用/index.html" />
+        <option value="$PROJECT_DIR$/html5_webworks/test.js" />
+        <option value="$PROJECT_DIR$/html5_webworks/index.html" />
+        <option value="$PROJECT_DIR$/worker_canvas_图片反色/index.html" />
+        <option value="$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/index.html" />
+        <option value="$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/randArray.js" />
+        <option value="$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/canvas.js" />
+        <option value="$PROJECT_DIR$/small.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/html5_音乐导航/index.html" />
       </list>
     </option>
   </component>
@@ -133,6 +95,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-6" />
@@ -154,8 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,45 +129,32 @@
             <path>
               <item name="study_miaowei" type="b2602c69:ProjectViewProjectNode" />
               <item name="study_miaowei" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas_实现钟表" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study_miaowei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study_miaowei" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas_点击旁边的字会在画布上像素写字" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study_miaowei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study_miaowei" type="462c0819:PsiDirectoryNode" />
-              <item name="聊天" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study_miaowei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study_miaowei" type="462c0819:PsiDirectoryNode" />
-              <item name="聊天" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="worker_js多线程" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="G:/LocalServer" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\study_miaowei" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\study_miaowei" />
       <recent name="G:\study_miaowei\canvas_图片反色" />
       <recent name="G:\study_miaowei\canvas_反色" />
       <recent name="G:\study_miaowei\canvas_点击按钮将图片旋转" />
-      <recent name="G:\study_miaowei" />
       <recent name="G:\study_miaowei\拖进物品进购物车\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\study_miaowei" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -239,20 +189,39 @@
       <workItem from="1505282521644" duration="12458000" />
       <workItem from="1505298737788" duration="10312000" />
       <workItem from="1505348434939" duration="8771000" />
-      <workItem from="1505369219138" duration="3353000" />
+      <workItem from="1505369219138" duration="11943000" />
+      <workItem from="1505386636709" duration="7739000" />
+      <workItem from="1505440197876" duration="3227000" />
+      <workItem from="1505562113452" duration="2615000" />
+      <workItem from="1505567924814" duration="1674000" />
+      <workItem from="1505639364495" duration="1006000" />
+      <workItem from="1505643807331" duration="8943000" />
+      <workItem from="1505697891904" duration="5589000" />
+      <workItem from="1505730900759" duration="3236000" />
+      <workItem from="1505961537288" duration="2484000" />
+      <workItem from="1505975636030" duration="8239000" />
+      <workItem from="1506043254575" duration="694000" />
+      <workItem from="1506069063850" duration="2603000" />
+      <workItem from="1506077241086" duration="760000" />
+      <workItem from="1506132748782" duration="836000" />
+      <workItem from="1506153371487" duration="991000" />
+      <workItem from="1506163202170" duration="7536000" />
+      <workItem from="1506213789993" duration="8887000" />
+      <workItem from="1506241270796" duration="11160000" />
+      <workItem from="1506301877975" duration="2665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74388000" />
+    <option name="totallyTimeSpent" value="163862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -264,6 +233,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -278,130 +248,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/canvas_鼠标画线/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_点击按钮将图片旋转/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3380">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#932#1202#0" expanded="false" />
-            <element signature="e#1252#1587#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_文字在画布上居中显示/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_点击旁边的字会在画布上像素写字/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1924">
-          <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_鼠标画线/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_点击按钮将图片旋转/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3380">
-          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1612">
-          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#932#1202#0" expanded="false" />
-            <element signature="e#1252#1587#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_鼠标画线/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_方块自动运动/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1612">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#932#1202#0" expanded="false" />
-            <element signature="e#1252#1587#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -414,9 +260,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#932#1202#0" expanded="false" />
-            <element signature="e#1252#1587#0" expanded="false" />
+            <element signature="e#344#392#0" expanded="false" />
+            <element signature="e#419#756#0" expanded="false" />
+            <marker date="1506302928834" expanded="false" signature="1317:1438" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -433,9 +279,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#932#1202#0" expanded="false" />
-            <element signature="e#1252#1587#0" expanded="false" />
+            <element signature="e#344#392#0" expanded="false" />
+            <element signature="e#419#756#0" expanded="false" />
+            <marker date="1506302928834" expanded="false" signature="1317:1438" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -452,9 +298,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#932#1202#0" expanded="false" />
-            <element signature="e#1252#1587#0" expanded="false" />
+            <element signature="e#344#392#0" expanded="false" />
+            <element signature="e#419#756#0" expanded="false" />
+            <marker date="1506302928834" expanded="false" signature="1317:1438" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -543,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/百度音乐试听列表中拖动功能/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -571,27 +410,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/图片上传的时候预览的功能/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/拖进物品进购物车/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="66" column="28" lean-forward="false" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_鼠标画线/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="26" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,70 +424,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_实现钟表/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/11.jpg" />
     <entry file="file://$PROJECT_DIR$/111.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_点击按钮将图片旋转/test.html">
+    <entry file="file://$PROJECT_DIR$/canvas_点击旁边的字会在画布上像素写字/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3380">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="330">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/canvas_文字在画布上居中显示/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
+        <state relative-caret-position="538">
           <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_点击旁边的字会在画布上像素写字/index.html">
+    <entry file="file://$PROJECT_DIR$/canvas_实现钟表/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="82">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas_图片反色/11.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas_图片反色/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/图片上传的时候预览的功能/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1578">
+          <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas_点击按钮将图片旋转/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas_鼠标画线/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="26" column="17" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/nodejs-socketio-chat/server/index.js" />
+    <entry file="file://$PROJECT_DIR$/client/index.html" />
+    <entry file="file://$PROJECT_DIR$/client/client.js" />
+    <entry file="file://$PROJECT_DIR$/ajax_无刷新上传/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html5实现离线存储应用/demo.manifest">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html5实现离线存储应用/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket_study/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2860">
+          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/randArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker_canvas_点击旁边的字会在画布上像素写字/canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker_canvas_图片反色/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2236">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker_js多线程/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker_js多线程/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/small.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="174">
+          <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#932#1202#0" expanded="false" />
-            <element signature="e#1252#1587#0" expanded="false" />
+            <element signature="e#344#392#0" expanded="false" />
+            <element signature="e#419#756#0" expanded="false" />
+            <marker date="1506302928834" expanded="false" signature="1317:1438" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/canvas_图片反色/index.html">
+    <entry file="file://$PROJECT_DIR$/html5_音乐导航/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#canvas#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#560#1415#0" expanded="false" />
-            <element signature="e#1462#1743#0" expanded="false" />
-            <element signature="e#1794#2117#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="382">
+          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

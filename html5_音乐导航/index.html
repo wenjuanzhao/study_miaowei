@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #ull{
+        width: 100%;height: 30px;margin: 0 ;padding: 0;
+    }
+    li{
+        list-style: none;width: 100px;height: 30px; background: red;color: white;float: left;text-align: center;line-height: 30px;border: 1px  solid green;
+    }
+</style>
+<body>
+  <ul id="ull">
+      <li ua="a">11111</li>
+      <li ua="b">2222</li>
+      <li ua="c">33333</li>
+      <li ua="d">44444</li>
+      <li ua="e">5555</li>
+      <li ua="f">6666</li>
+      <li ua="g">77777</li>
+  </ul>
+<audio id="oa" autoplay></audio>
+</body>
+<script>
+    window.onload=function () {
+        var ull=document.getElementById("ull");
+        var li=ull.getElementsByTagName("li");
+        var oa=document.getElementById("oa")
+        for(var i=0;i<li.length;i++){
+            li[i].onmouseover=function () {
+                oa.src=`http://s8.qhimg.com/share/audio/piano1/${this.getAttribute("ua")}4.mp3`
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="form-group">
+    <label>File input</label>
+    <input type="file" name="file" id="file">
+    <p id="result"></p>
+    <img id="img" src="">
+</div>
+<button id="upload" class="btn btn-default">提交</button>
+</body>
+<script>
+    var ws = new WebSocket("ws://localhost:8888");
+    console.log(ws.readyState)  //0  CONNECTING：值为0，表示正在连接
+    ws.onopen = function(evt) {
+        console.log("Connection open ...");
+        console.log(ws.readyState)  //1  OPEN：值为1，表示连接成功，可以通信了。
+        ws.send("Hello WebSockets!");
+    };
+    ws.onmessage = function(evt) {
+        console.log( "Received Message: " + evt.data);
+        ws.close();
+        console.log(ws.readyState)  //2  CLOSING：值为2，表示连接正在关闭。
+    };
+    ws.onclose = function(evt) {
+        console.log(ws.readyState) //3  CLOSED：值为3，表示连接已经关闭，或者打开连接失败。
+        console.log("Connection closed.");
+    };
+</script>
+</html>

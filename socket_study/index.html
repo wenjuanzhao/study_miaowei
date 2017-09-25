@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+</head>
+<body>
+   <div>sasasa</div>
+<button typeof="button" value="post" id="btn">sasasa</button>
+<script>
+    window.onload=function () {
+        var oBtn=document.getElementById("btn");
+        var socket=null;
+        oBtn.onclick=function () {
+            //连接器起来的一个socket 实例
+            var socket=io.connect('http://localhost:8888')
+            //客户端收到服务器发送的事件hello  做出的响应
+            socket.on('hello',function (data) {
+                alert(data)
+                //客户端向服务器发送事件hello11  传送的数据为ssjasasjia
+                this.emit('hello11',"ssjasasjia")
+
+            })
+            socket.on('a',function (data) {
+                alert(data)
+            })
+        }
+    }
+</script>
+</body>
+</html>

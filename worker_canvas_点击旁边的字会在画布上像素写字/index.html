@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: black;color: white;font-size: 80px;
+    }
+    #c1{
+        background: white;
+    }
+</style>
+<body>
+
+<canvas id="c1" width="400" height="400">
+    <span style="color: white">不支持canvas</span>
+</canvas>
+<ul style="float: left;margin-right: 20px;">
+    <li>我</li>
+    <li>是</li>
+    <li>丹</li>
+    <li>丹</li>
+    <li>赵</li>
+</ul>
+</body>
+
+<script>
+    window.onload=function () {
+        var oc=document.getElementById("c1");
+        var oGC=oc.getContext("2d");
+        var lis=document.getElementsByTagName("li");
+        for(var i=0;i<lis.length;i++){
+            lis[i].onclick=function () {
+                var timer=null;
+                clearInterval(timer);
+                var iNow=0;
+                var str=this.innerHTML
+                var h=80
+                oGC.clearRect(0,0,oc.width,oc.height)
+                oGC.font=h+"px impact";
+                oGC.textBaseline='top'
+                oGC.fillStyle="red"
+                var w=oGC.measureText(str).width;
+                oGC.fillText(str,(oc.width-w)/2,(oc.height-h)/2)
+                var oImg=oGC.getImageData((oc.width-w)/2,(oc.height-h)/2,w,h)
+                oGC.clearRect(0,0,oc.width,oc.height)
+                var ws=new Worker('canvas.js')
+                var newImg=oGC.createImageData(w,h)//新创建出来的像素的宽和高
+                ws.postMessage(w*h);
+                ws.onmessage=function (p1) {
+                    var arr=p1.data;
+                    timer=setInterval(function () {
+                        for(var i=0;i<arr[iNow].length;i++){
+                            newImg.data[4*arr[iNow][i]]=oImg.data[4*arr[iNow][i]]
+                            newImg.data[4*arr[iNow][i]+1]=oImg.data[4*arr[iNow][i]+1]
+                            newImg.data[4*arr[iNow][i]+2]=oImg.data[4*arr[iNow][i]+2]
+                            newImg.data[4*arr[iNow][i]+3]=oImg.data[4*arr[iNow][i]+3]
+                        }
+                        oGC.putImageData(newImg,(oc.width-w)/2,(oc.height-h)/2)
+                        if(iNow==9){
+                            iNow=0;
+                            clearInterval(timer)
+                        }else{
+                            iNow++;
+                        }
+                    },200)
+                }
+
+            }
+        }
+
+    }
+</script>
+</html>

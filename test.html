@@ -7,63 +7,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<style>
-    body{
-        background: black;
-    }
-    #c1{
-         background: white;
-    }
-</style>
+
 <body>
 
-<canvas id="c1" width="400" height="400">
-   <span style="color: white">不支持canvas</span>
-</canvas>
+
 </body>
-
 <script>
-   window.onload=function () {
-       var oc=document.getElementById("c1");
-       //得到绘制环境  画笔
-       var context=oc.getContext("2d");
-       context.fillRect(0,0,100,100);
-       var img=context.getImageData(0,0,100,100);
-
-       for(var i=0;i<img.width;i++){
-           setXY(img,i,3,[255,0,0,255])
-       }
-        context.putImageData(img,100,100)
-   }
-   //设置像素点
-   function setXY(obj,x,y,color) {
-       var w=obj.width;
-       var h=obj.height;
-       var d=obj.data;
-       for(var i=0;i<d.length;i++)
-       {
-           d[4*(y*w+x)]=color[0]
-           d[4*(y*w+x)+1]=color[1]
-           d[4*(y*w+x)+2]=color[2]
-           d[4*(y*w+x)+3]=color[3]
-       }
-
-   }
-   //传递imgData  x  y
-    function getXY(img,x,y) {
-         var color=[];
-         var w=img.width;
-         var h=img.height;
-         var d=img.data;
-         for(var i=0;i<d.length;i++)
-         {
-             color[0]=d[4*(y*w+x)]
-             color[1]=d[4*(y*w+x)+1]
-             color[2]=d[4*(y*w+x)+2]
-             color[3]=d[4*(y*w+x)+3]
-         }
-         return color
+    const imgs=[
+          "22.jpg",
+          "111.jpg",
+    ]
+    function loadImg(url) {
+        var promise=new Promise(function (resolve,reject) {
+            const img=new Image();
+            img.src=url;
+            img.onload=function () {
+                resolve(this)
+            }
+            img.onerror=function () {
+                reject(new Error("加载失败"))
+            }
+        })
+        return promise;
     }
+  /*  Promise.all([loadImg(imgs[0]),loadImg(imgs[1])]).then(function (datas) {
+          datas.forEach(function (t) {
+              document.body.appendChild(t)
+          })
+    }).catch(function (error) {
+        console.log(error)
+    })*/
+/*   Promise.resolve("ssasa").then(function (mess) {
+       console.log(mess)
+   })*/
 
+   /* var sleep = function (time) {
+        return new Promise(function (resolve, reject) {
+            setTimeout(function () {
+                resolve();
+            }, time);
+        })
+    };
+
+    var start = async function () {
+        // 在这里使用起来就像同步代码那样直观
+        console.log('start');
+        await sleep(3000);
+        console.log('end');
+    };
+
+    start();*/
+  /* (  function () {
+     console.log(typeof arguments)
+   })()*/
+   function test(n) {
+       var arr=[];
+       arr.length=n+1;
+       var str="";
+       str=arr.join("a");
+       var arr2=[];
+       str.replace(/a/g,function () {
+           arr2.unshift(n--)
+       })
+       return arr2;
+   }
+   console.log(test(5))  //[1,2,3,4,5]
+/*   var str="sasas123ssjais34jsaisj56";
+   function test(str) {
+       var pattern=/\d+/g;
+       var arr=str.match(pattern);
+       console.log(arr);
+   }
+   test(str)*/
 </script>
 </html>
